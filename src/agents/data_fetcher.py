@@ -2,10 +2,8 @@
 from typing import Dict, Optional
 import pandas as pd
 import logging
-from datetime import datetime
-from src.api.alpha_vantage import fetch_alpha_vantage_data
 from src.database.operations import DatabaseOperations
-from src.database.models import FundamentalData, OHLCData
+from src.api.alpha_vantage import fetch_alpha_vantage_data  # Ensure this is correctly implemented
 
 logger = logging.getLogger(__name__)
 
@@ -15,44 +13,37 @@ class DataFetcher:
         self.db_ops = db_ops
 
     def fetch_data(self, query_params: Dict[str, str]) -> Optional[pd.DataFrame]:
-        logger.info(f"Fetching data with params: {query_params}")
-        
+        """Fetches data based on query parameters, either from DB or API"""
+        ticker = query_params.get("ticker")
+        start_date = query_params.get("start_date")
+        end_date = query_params.get("end_date")
+        timeframe = query_params.get("timeframe")
+
+        logger.info(f"Fetching data for ticker: {ticker}, timeframe: {timeframe}, dates: {start_date} to {end_date}")
+
         try:
-            # Try to get data from database first
-            data = self.db_ops.get_stock_data(
-                ticker=query_params["ticker"],
-                start_date=query_params["start_date"],
-                end_date=query_params["end_date"],
-                timeframe=query_params["timeframe"]
-            )
-            
+            # Attempt to retrieve data from the database
+            data = self.db_ops.get_stock_data(ticker, start_date, end_date, timeframe)
             if data is not None and not data.empty:
-                logger.info("Data found in database")
+                logger.info("Data retrieved from database")
                 return data
-                
-            # If no data in database, fetch from API
-            logger.info("Fetching data from API")
+            
+            # If data not found, fetch from external API
+            logger.info("Data not found in database. Fetching from API")
             api_data = fetch_alpha_vantage_data(query_params)
             
-            if not api_data.empty:
-                logger.info("Successfully fetched data from API")
+            if api_data is not None and not api_data.empty:
+                logger.info("Data fetched from API successfully")
                 
-                # Prepare data for database
-                fundamental_data = {
-                    'ticker': query_params['ticker'],
-                    'asset_name': api_data['ticker'].iloc[0],  # You might want to get proper name
-                    'asset_type': 'stock'
-                }
-                
-                # Save to database
+                # Save fetched data to the database
                 self.db_ops.save_stock_data(api_data)
-                logger.info("Data saved to database")
+                logger.info("Fetched data saved to database")
                 
                 return api_data
             else:
-                logger.warning("No data available from API")
+                logger.warning("No data returned from API")
                 return None
-                
+
         except Exception as e:
-            logger.error(f"Error in fetch_data: {str(e)}")
+            logger.error(f"Error fetching data: {str(e)}")
             raise

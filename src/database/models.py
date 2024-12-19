@@ -1,11 +1,10 @@
 # src/database/models.py
 from sqlalchemy import (
-    create_engine, Column, Integer, BigInteger, String, Date, Time, Numeric,
+    Column, Integer, BigInteger, String, Date, Time, Numeric,
     ForeignKey, CheckConstraint, UniqueConstraint, Text, DateTime, Interval,
-    Float
+    func
 )
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
 from config.settings import DATABASE_URL
 
@@ -18,7 +17,7 @@ class FundamentalData(Base):
     asset_name = Column(String(100), nullable=False)
     industry = Column(String(100))
     asset_type = Column(String(20), CheckConstraint(
-        "asset_type IN ('stock', 'etf', 'index', 'crypto', 'other')"))
+        "asset_type IN ('stock', 'etf', 'index', 'crypto', 'other')"), nullable=False)
     created_at = Column(DateTime, default=func.now())
 
     # Relationships
@@ -29,10 +28,10 @@ class OHLCData(Base):
     __tablename__ = 'ohlc_data'
 
     ohlc_id = Column(Integer, primary_key=True, autoincrement=True)
-    ticker = Column(String(10), ForeignKey('fundamental_data.ticker', ondelete='CASCADE'))
+    ticker = Column(String(10), ForeignKey('fundamental_data.ticker', ondelete='CASCADE'), nullable=False)
     bar_date = Column(Date, nullable=False)
     bar_time = Column(Time, nullable=False)
-    timeframe = Column(String(10), nullable=False)
+    timeframe = Column(String(10), nullable=False)  # e.g., '1min', '30min', 'daily'
     open_price = Column(Numeric(15, 6), nullable=False)
     high_price = Column(Numeric(15, 6), nullable=False)
     low_price = Column(Numeric(15, 6), nullable=False)
@@ -52,9 +51,9 @@ class BacktestSummary(Base):
 
     test_id = Column(Integer, primary_key=True, autoincrement=True)
     description = Column(Text, nullable=False)
-    ticker = Column(String(10), ForeignKey('fundamental_data.ticker', ondelete='CASCADE'))
+    ticker = Column(String(10), ForeignKey('fundamental_data.ticker', ondelete='CASCADE'), nullable=False)
     strategy_name = Column(String(100), nullable=False)
-    strategy_parameters = Column(Text)
+    strategy_parameters = Column(Text)  # e.g., "SmaCross(n1=10, n2=20)"
     start_date = Column(DateTime, nullable=False)
     end_date = Column(DateTime, nullable=False)
     duration = Column(Interval)
@@ -92,8 +91,8 @@ class BacktestDetails(Base):
     __tablename__ = 'backtest_details'
 
     detail_id = Column(Integer, primary_key=True, autoincrement=True)
-    test_id = Column(Integer, ForeignKey('backtest_summary.test_id', ondelete='CASCADE'))
-    trade_number = Column(Integer, CheckConstraint('trade_number > 0'))
+    test_id = Column(Integer, ForeignKey('backtest_summary.test_id', ondelete='CASCADE'), nullable=False)
+    trade_number = Column(Integer, CheckConstraint('trade_number > 0'), nullable=False)
     buy_date = Column(Date, nullable=False)
     buy_time = Column(Time, nullable=False)
     sell_date = Column(Date, nullable=False)
@@ -101,6 +100,9 @@ class BacktestDetails(Base):
     buy_price = Column(Numeric(15, 6), nullable=False)
     sell_price = Column(Numeric(15, 6), nullable=False)
     position_size = Column(Integer, CheckConstraint('position_size > 0'))
+    trade_duration = Column(Interval, server_default='0 seconds')  # Generated always
+    trade_return_pct = Column(Numeric(10, 2), server_default='0')
+    profit_loss = Column(Numeric(15, 2), server_default='0')
     equity_after_trade = Column(Numeric(15, 2))
 
     # Relationships
@@ -110,7 +112,3 @@ class BacktestDetails(Base):
     __table_args__ = (
         UniqueConstraint('test_id', 'trade_number', name='uix_backtest_details'),
     )
-
-def init_db():
-    engine = create_engine(DATABASE_URL)
-    Base.metadata.create_all(engine)

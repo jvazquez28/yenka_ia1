@@ -1,35 +1,171 @@
-2024-12-19 09:10:22,618 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
-2024-12-19 09:10:24,949 - __main__ - INFO - Initializing OpenAI LLM...
-2024-12-19 09:10:26,469 - __main__ - INFO - OpenAI LLM initialized successfully
-2024-12-19 09:10:26,775 - src.database.operations - INFO - Database connection initialized
-2024-12-19 09:10:26,776 - __main__ - INFO - Database operations initialized successfully
-2024-12-19 09:19:19,437 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
-2024-12-19 09:19:19,442 - __main__ - INFO - Initializing OpenAI LLM...
-2024-12-19 09:19:19,575 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
-2024-12-19 09:19:19,582 - __main__ - INFO - Initializing OpenAI LLM...
-2024-12-19 09:19:19,970 - __main__ - INFO - OpenAI LLM initialized successfully
-2024-12-19 09:19:19,971 - src.database.operations - INFO - Database connection initialized
-2024-12-19 09:19:19,972 - __main__ - INFO - Database operations initialized successfully
-2024-12-19 09:19:20,032 - __main__ - INFO - OpenAI LLM initialized successfully
-2024-12-19 09:19:20,035 - src.database.operations - INFO - Database connection initialized
-2024-12-19 09:19:20,035 - __main__ - INFO - Database operations initialized successfully
-2024-12-19 09:19:20,036 - src.agents.query_parser - INFO - Initializing QueryParser
-2024-12-19 09:19:20,037 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de MSFT sólo del último mes
-2024-12-19 09:19:20,770 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 404 Not Found"
-2024-12-19 09:19:20,773 - src.agents.query_parser - ERROR - Error parsing query: Error code: 404 - {'error': {'message': 'The model `gpt-4.0-turbo-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
-2024-12-19 09:19:20,774 - __main__ - ERROR - Error processing query: Error code: 404 - {'error': {'message': 'The model `gpt-4.0-turbo-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
-2024-12-19 09:22:01,657 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
-2024-12-19 09:22:01,668 - __main__ - INFO - Initializing OpenAI LLM...
-2024-12-19 09:22:02,024 - __main__ - INFO - OpenAI LLM initialized successfully
-2024-12-19 09:22:02,024 - src.database.operations - INFO - Database connection initialized
-2024-12-19 09:22:02,025 - __main__ - INFO - Database operations initialized successfully
-2024-12-19 09:22:02,027 - src.agents.query_parser - INFO - Initializing QueryParser
-2024-12-19 09:22:02,027 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de MSFT sólo del último mes
-2024-12-19 09:22:03,096 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
-2024-12-19 09:22:03,103 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'MSFT', 'start_date': '', 'end_date': '', 'timeframe': 'daily'}
-2024-12-19 09:22:03,104 - __main__ - INFO - Parsed query: {'ticker': 'MSFT', 'start_date': '', 'end_date': '', 'timeframe': 'daily'}
-2024-12-19 09:22:03,104 - src.agents.data_fetcher - INFO - Initializing DataFetcher
-2024-12-19 09:22:03,105 - src.agents.data_fetcher - INFO - Fetching data with params: {'ticker': 'MSFT', 'start_date': '', 'end_date': '', 'timeframe': 'daily'}
-2024-12-19 09:22:03,132 - src.database.operations - ERROR - Error retrieving stock data: DLL load failed while importing _sqlite3: No se puede encontrar el módulo especificado.
-2024-12-19 09:22:03,132 - src.agents.data_fetcher - ERROR - Error in fetch_data: DLL load failed while importing _sqlite3: No se puede encontrar el módulo especificado.
-2024-12-19 09:22:03,133 - __main__ - ERROR - Error processing query: DLL load failed while importing _sqlite3: No se puede encontrar el módulo especificado.
+2024-12-19 12:31:19,682 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 12:31:21,768 - __main__ - INFO - Initializing OpenAI LLM
+2024-12-19 12:31:23,522 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 12:31:23,649 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 12:31:23,649 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 12:31:34,720 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 12:31:34,729 - __main__ - INFO - Initializing OpenAI LLM
+2024-12-19 12:31:35,300 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 12:31:35,301 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 12:31:35,301 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 12:31:35,306 - src.agents.query_parser - INFO - Initializing QueryParser
+2024-12-19 12:31:35,307 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL del último mes
+2024-12-19 12:31:37,319 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2024-12-19 12:31:37,337 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2023-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2024-12-19 12:31:37,337 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2023-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2024-12-19 12:31:37,338 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-19 12:31:37,338 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2023-01-01 to 2023-12-31
+2024-12-19 12:31:37,435 - src.agents.data_fetcher - INFO - Data not found in database. Fetching from API
+2024-12-19 12:31:38,393 - src.agents.data_fetcher - INFO - Data fetched from API successfully
+2024-12-19 12:31:45,062 - src.database.operations - ERROR - Error saving stock data: 'bar_date'
+2024-12-19 12:31:45,063 - src.agents.data_fetcher - ERROR - Error fetching data: 'bar_date'
+2024-12-19 12:31:45,063 - __main__ - ERROR - Error processing query: 'bar_date'
+2024-12-19 14:07:38,301 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:07:58,933 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:10:36,937 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:10:38,202 - __main__ - INFO - Initializing OpenAI LLM
+2024-12-19 14:10:39,585 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 14:10:39,810 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:10:39,810 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:10:56,550 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:10:56,557 - __main__ - INFO - Initializing OpenAI LLM
+2024-12-19 14:10:56,714 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:10:56,717 - __main__ - INFO - Initializing OpenAI LLM
+2024-12-19 14:10:57,010 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 14:10:57,010 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:10:57,011 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:10:57,364 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 14:10:57,366 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:10:57,367 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:10:57,375 - src.agents.query_parser - INFO - Initializing QueryParser
+2024-12-19 14:10:57,376 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL
+2024-12-19 14:10:58,084 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 404 Not Found"
+2024-12-19 14:10:58,088 - src.agents.query_parser - ERROR - Error parsing query: Error code: 404 - {'error': {'message': 'The model `gpt-4.0-turbo-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2024-12-19 14:10:58,089 - __main__ - ERROR - Error processing query: Error code: 404 - {'error': {'message': 'The model `gpt-4.0-turbo-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2024-12-19 14:16:21,789 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:16:22,263 - __main__ - INFO - Initializing OpenAI LLM
+2024-12-19 14:16:22,462 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 14:16:22,497 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:16:22,497 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:16:29,213 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:16:29,218 - __main__ - INFO - Initializing OpenAI LLM
+2024-12-19 14:16:29,223 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 14:16:29,226 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:16:29,227 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:16:29,242 - src.agents.query_parser - INFO - Initializing QueryParser
+2024-12-19 14:16:29,244 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL del último mes
+2024-12-19 14:16:29,261 - src.agents.query_parser - ERROR - Error parsing query: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-19 14:16:29,266 - __main__ - ERROR - Error processing query: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-19 14:30:33,524 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:30:33,993 - __main__ - INFO - Initializing OpenAI LLM
+2024-12-19 14:30:34,261 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 14:30:34,318 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:30:34,319 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:30:39,032 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:30:39,039 - __main__ - INFO - Initializing OpenAI LLM
+2024-12-19 14:30:39,044 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 14:30:39,047 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:30:39,048 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:30:39,060 - src.agents.query_parser - INFO - Initializing QueryParser
+2024-12-19 14:30:39,062 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL del último mes
+2024-12-19 14:30:39,075 - src.agents.query_parser - ERROR - Error parsing query: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-19 14:30:39,079 - __main__ - ERROR - Error processing query: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-19 14:31:01,508 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:31:02,251 - __main__ - INFO - Initializing OpenAI LLM
+2024-12-19 14:31:02,258 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 14:31:02,305 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:31:02,305 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:31:04,122 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:31:04,127 - __main__ - INFO - Initializing OpenAI LLM
+2024-12-19 14:31:04,131 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 14:31:04,133 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:31:04,134 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:31:04,148 - __main__ - ERROR - Error processing query: QueryParser.__init__() takes 1 positional argument but 2 were given
+2024-12-19 14:38:24,460 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:38:41,253 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:40:13,295 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:40:13,308 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2024-12-19 14:40:13,310 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2024-12-19 14:40:13,311 - __main__ - INFO - QueryParser initialized successfully
+2024-12-19 14:40:13,422 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:40:13,423 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:40:13,423 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-19 14:40:22,689 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:40:22,694 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2024-12-19 14:40:22,697 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2024-12-19 14:40:22,698 - __main__ - INFO - QueryParser initialized successfully
+2024-12-19 14:40:22,700 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:40:22,701 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:40:22,701 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-19 14:40:22,718 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL del último mes
+2024-12-19 14:40:22,721 - src.agents.query_parser - ERROR - Error parsing query: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-19 14:40:22,726 - __main__ - ERROR - Error processing query: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-19 14:45:08,377 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:45:09,284 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2024-12-19 14:45:09,284 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2024-12-19 14:45:09,428 - __main__ - INFO - QueryParser initialized successfully
+2024-12-19 14:45:09,460 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:45:09,461 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:45:09,461 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-19 14:45:20,957 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 14:45:20,963 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2024-12-19 14:45:20,964 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2024-12-19 14:45:21,228 - __main__ - INFO - QueryParser initialized successfully
+2024-12-19 14:45:21,229 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-19 14:45:21,229 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 14:45:21,230 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-19 14:45:21,233 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL del último mes

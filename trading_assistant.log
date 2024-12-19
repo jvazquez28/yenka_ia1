@@ -169,3 +169,13 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-12-19 14:45:21,229 - __main__ - INFO - Database operations initialized successfully
 2024-12-19 14:45:21,230 - src.agents.data_fetcher - INFO - Initializing DataFetcher
 2024-12-19 14:45:21,233 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL del último mes
+2024-12-19 14:45:22,087 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-19 14:45:22,098 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': None, 'end_date': None, 'timeframe': 'daily'}
+2024-12-19 14:45:22,098 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': None, 'end_date': None, 'timeframe': 'daily'}
+2024-12-19 14:45:22,098 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: None to None
+2024-12-19 14:45:22,188 - src.agents.data_fetcher - INFO - Data not found in database. Fetching from API
+2024-12-19 14:45:23,257 - src.api.alpha_vantage - INFO - Fetched 6324 records from Alpha Vantage for ticker: AAPL
+2024-12-19 14:45:23,259 - src.agents.data_fetcher - INFO - Data fetched from API successfully
+2024-12-19 14:45:23,318 - src.database.operations - INFO - Added new fundamental data for ticker: AAPL
+2024-12-19 14:45:24,385 - src.database.operations - INFO - Saved 6324 OHLC records for ticker: AAPL
+2024-12-19 14:45:24,389 - src.agents.data_fetcher - INFO - Fetched data saved to database

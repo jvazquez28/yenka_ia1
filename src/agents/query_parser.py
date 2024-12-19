@@ -19,6 +19,12 @@ class QueryParser:
             3. End date (YYYY-MM-DD)
             4. Timeframe (daily, weekly, monthly)
 
+            Date may be specified as last week, last month, etc. In such cases, convert to YYYY-MM-DD format the best you can
+            considering the first and last date of either last week, last month, last year as required.
+
+            Date may also be specified as current month, current year, etc. In such cases, convert to YYYY-MM-DD format the best you can
+            considering the first and last date of either current month, current year as required.
+
             Query: "{query}"
             """,
             input_variables=["query"]

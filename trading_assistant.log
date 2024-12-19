@@ -1,0 +1,35 @@
+2024-12-19 09:10:22,618 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 09:10:24,949 - __main__ - INFO - Initializing OpenAI LLM...
+2024-12-19 09:10:26,469 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 09:10:26,775 - src.database.operations - INFO - Database connection initialized
+2024-12-19 09:10:26,776 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 09:19:19,437 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 09:19:19,442 - __main__ - INFO - Initializing OpenAI LLM...
+2024-12-19 09:19:19,575 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 09:19:19,582 - __main__ - INFO - Initializing OpenAI LLM...
+2024-12-19 09:19:19,970 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 09:19:19,971 - src.database.operations - INFO - Database connection initialized
+2024-12-19 09:19:19,972 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 09:19:20,032 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 09:19:20,035 - src.database.operations - INFO - Database connection initialized
+2024-12-19 09:19:20,035 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 09:19:20,036 - src.agents.query_parser - INFO - Initializing QueryParser
+2024-12-19 09:19:20,037 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de MSFT sólo del último mes
+2024-12-19 09:19:20,770 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 404 Not Found"
+2024-12-19 09:19:20,773 - src.agents.query_parser - ERROR - Error parsing query: Error code: 404 - {'error': {'message': 'The model `gpt-4.0-turbo-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2024-12-19 09:19:20,774 - __main__ - ERROR - Error processing query: Error code: 404 - {'error': {'message': 'The model `gpt-4.0-turbo-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2024-12-19 09:22:01,657 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-19 09:22:01,668 - __main__ - INFO - Initializing OpenAI LLM...
+2024-12-19 09:22:02,024 - __main__ - INFO - OpenAI LLM initialized successfully
+2024-12-19 09:22:02,024 - src.database.operations - INFO - Database connection initialized
+2024-12-19 09:22:02,025 - __main__ - INFO - Database operations initialized successfully
+2024-12-19 09:22:02,027 - src.agents.query_parser - INFO - Initializing QueryParser
+2024-12-19 09:22:02,027 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de MSFT sólo del último mes
+2024-12-19 09:22:03,096 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2024-12-19 09:22:03,103 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'MSFT', 'start_date': '', 'end_date': '', 'timeframe': 'daily'}
+2024-12-19 09:22:03,104 - __main__ - INFO - Parsed query: {'ticker': 'MSFT', 'start_date': '', 'end_date': '', 'timeframe': 'daily'}
+2024-12-19 09:22:03,104 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-19 09:22:03,105 - src.agents.data_fetcher - INFO - Fetching data with params: {'ticker': 'MSFT', 'start_date': '', 'end_date': '', 'timeframe': 'daily'}
+2024-12-19 09:22:03,132 - src.database.operations - ERROR - Error retrieving stock data: DLL load failed while importing _sqlite3: No se puede encontrar el módulo especificado.
+2024-12-19 09:22:03,132 - src.agents.data_fetcher - ERROR - Error in fetch_data: DLL load failed while importing _sqlite3: No se puede encontrar el módulo especificado.
+2024-12-19 09:22:03,133 - __main__ - ERROR - Error processing query: DLL load failed while importing _sqlite3: No se puede encontrar el módulo especificado.

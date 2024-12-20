@@ -1,3 +1,9 @@
 docs/
 .env
 trading_assistant.log
+.vscode/
+config/__pycache__/
+frontend/__pycache__/
+src/__pycache__/
+
+

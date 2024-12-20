@@ -59,30 +59,41 @@ class DatabaseOperations:
             raise
 
     def save_stock_data(self, data: pd.DataFrame):
-        """Save OHLCV data to PostgreSQL database"""
+        """Save OHLCV data to PostgreSQL database, skipping existing records"""
         try:
             with self.Session() as session:
-                # Ensure correct column names
-                data = data.rename(columns={
-                    'date': 'bar_date',
-                    'time': 'bar_time'
-                })
-
-                # Check if FundamentalData exists, if not, create it
+                # Ensure FundamentalData exists
                 fundamental_ticker = data['ticker'].iloc[0]
                 fundamental = session.query(FundamentalData).filter_by(ticker=fundamental_ticker).first()
                 if not fundamental:
                     fundamental = FundamentalData(
                         ticker=fundamental_ticker,
-                        asset_name=fundamental_ticker,  # Modify as needed
-                        asset_type='stock'  # Modify as needed
+                        asset_name=fundamental_ticker,
+                        asset_type='stock'
                     )
                     session.add(fundamental)
                     session.commit()
                     logger.info(f"Added new fundamental data for ticker: {fundamental_ticker}")
 
-                # Prepare OHLCData objects
-                ohlc_records = [
+                # Get existing records for this ticker and timeframe
+                existing_records = session.query(
+                    OHLCData.ticker,
+                    OHLCData.bar_date,
+                    OHLCData.bar_time,
+                    OHLCData.timeframe
+                ).filter(
+                    OHLCData.ticker == fundamental_ticker,
+                    OHLCData.timeframe == data['timeframe'].iloc[0]
+                ).all()
+
+                # Create set of existing keys for fast lookup
+                existing_keys = {
+                    (r.ticker, r.bar_date, r.bar_time, r.timeframe) 
+                    for r in existing_records
+                }
+
+                # Filter new records
+                new_records = [
                     OHLCData(
                         ticker=row['ticker'],
                         bar_date=row['bar_date'],
@@ -93,17 +104,28 @@ class DatabaseOperations:
                         low_price=row['low_price'],
                         close_price=row['close_price'],
                         volume=row['volume']
-                    ) for _, row in data.iterrows()
+                    )
+                    for _, row in data.iterrows()
+                    if (row['ticker'], row['bar_date'], row['bar_time'], row['timeframe']) 
+                    not in existing_keys
                 ]
 
-                # Bulk save
-                session.bulk_save_objects(ohlc_records)
-                session.commit()
-                logger.info(f"Saved {len(ohlc_records)} OHLC records for ticker: {fundamental_ticker}")
+                if new_records:
+                    session.bulk_save_objects(new_records)
+                    session.commit()
+                    logger.info(f"Saved {len(new_records)} new OHLC records for ticker: {fundamental_ticker}")
+                else:
+                    logger.info(f"No new records to save for ticker: {fundamental_ticker}")
+
+                skipped = len(data) - len(new_records)
+                if skipped > 0:
+                    logger.info(f"Skipped {skipped} existing records for ticker: {fundamental_ticker}")
+
         except Exception as e:
             logger.error(f"Error saving stock data: {str(e)}")
             raise
 
+    
     def save_backtest_summary(self, backtest_data: dict) -> int:
         """Save backtest summary results and return the test_id"""
         try:

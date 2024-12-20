@@ -83,7 +83,7 @@ def main():
         st.markdown("### 💬 Query Input")
         query = st.text_input(
             "Ingrese su consulta financiera en lenguaje natural:", 
-            "Mostrar datos diarios de AAPL del último mes"
+            "Mostrar datos diarios de AAPL del último año"
         )
     
     if st.button("Analizar"):

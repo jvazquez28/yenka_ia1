@@ -18,15 +18,30 @@ class QueryParser:
         try:
             logger.debug("Invoking OpenAI ChatCompletion API")
             response = self.client.chat.completions.create(
-                model="gpt-3.5-turbo",  # Use the appropriate model "gpt-4" es otra opcion
+                model="gpt-3.5-turbo",
                 messages=[
-                    {"role": "system", "content": "You are a helpful assistant that extracts financial query parameters."},
-                    {"role": "user", "content": f"Extract the following information from the user's query:\n1. Stock ticker symbol (e.g., AAPL)\n2. Start date (YYYY-MM-DD)\n3. End date (YYYY-MM-DD)\n4. Timeframe (daily, weekly, monthly)\n\nQuery: \"{query}\""}
+                    {"role": "system", "content": """
+                    You are a financial query parser that extracts and translates information from natural language queries.
+                    You must interpret relative date references and convert them to actual dates in YYYY-MM-DD format.
+                    
+                    Examples of date translations:
+                    - "last month" -> Start: First day of previous month, End: Last day of previous month
+                    - "this year" -> Start: First day of current year, End: Today
+                    - "last 6 months" -> Start: Date 6 months ago, End: Today
+                    - "2023" -> Start: 2023-01-01, End: 2023-12-31
+                     
+                    If you are unable to determine the exact date, return the closest possible date range.
+                    
+                    Return information in this exact format:
+                    - Ticker: [SYMBOL]
+                    - Start Date: [YYYY-MM-DD]
+                    - End Date: [YYYY-MM-DD]
+                    - Timeframe: [daily/weekly/monthly]
+                    """},
+                    {"role": "user", "content": query}
                 ],
                 max_tokens=150,
-                n=1,
-                stop=None,
-                temperature=0.3,
+                temperature=0.5
             )
 
             if not response or not response.choices:

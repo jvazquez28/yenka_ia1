@@ -18,7 +18,7 @@ class FundamentalData(Base):
     industry = Column(String(100))
     asset_type = Column(String(20), CheckConstraint(
         "asset_type IN ('stock', 'etf', 'index', 'crypto', 'other')"), nullable=False)
-    created_at = Column(DateTime, default=func.now())
+    created_at = Column(DateTime, server_default=func.now())
 
     # Relationships
     ohlc_data = relationship('OHLCData', back_populates='fundamental_data', cascade='all, delete-orphan')
@@ -81,7 +81,7 @@ class BacktestSummary(Base):
     profit_factor = Column(Numeric(6, 2))
     expectancy_pct = Column(Numeric(6, 2))
     sqn = Column(Numeric(6, 2))
-    created_at = Column(DateTime, default=func.now())
+    created_at = Column(DateTime, server_default=func.now())
 
     # Relationships
     fundamental_data = relationship('FundamentalData', back_populates='backtest_summaries')

@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 import plotly.express as px
 from typing import Optional
+import matplotlib.pyplot as plt
+
 
 
 # Configure logging
@@ -106,19 +108,60 @@ def main():
                 with st.expander("Ver datos"):
                     st.dataframe(data)
                 
-                # Create price chart
+                # Calculate SMAs
+                data['SMA_10'] = data['close_price'].rolling(window=10).mean()
+                data['SMA_20'] = data['close_price'].rolling(window=20).mean()
+                
+                # Create price chart with SMAs
                 fig = px.line(
                     data,
                     x='bar_date',
-                    y=['close_price'],
+                    y=['close_price', 'SMA_10', 'SMA_20'],
                     labels={
                         'bar_date': 'Fecha',
                         'value': 'Precio',
-                        'variable': 'Tipo de Precio'
+                        'variable': 'Indicador',
+                        'close_price': 'Precio',
+                        'SMA_10': 'Media Móvil 10',
+                        'SMA_20': 'Media Móvil 20'
                     },
                     title=f'Precios de {parsed_query["ticker"].upper()}'
                 )
                 st.plotly_chart(fig)
+
+                # Run backtest
+                from src.backtesting.two_sma import run_two_sma_backtest
+                logger.info("Executing the Two-SMA backtest")
+                ticker = parsed_query["ticker"]
+                try:
+                    #result, buy_hold_return_pct = run_two_sma_backtest(data, db_ops, ticker)
+                    result = run_two_sma_backtest(data, db_ops, ticker)
+                    st.success("Backtest completado correctamente. Resultados almacenados en la base de datos.")
+
+                    # Display backtest results
+                    st.write("### Resultados del Backtest")
+                    st.write(result)
+
+                    # Display backtest plots
+                    #st.write("### Gráficos del Backtest")
+                    #try:
+                        # Use a default style that's guaranteed to exist    
+                        #plt.style.use('default')
+
+                        # Create figure with larger size
+                        #plt.figure(figsize=(12, 8))
+
+                        #fig_backtest = result.plot()
+                        #st.pyplot(fig_backtest, clear_figure=True)
+
+                    #except Exception as e:
+                        #logger.error(f"Error generating backtest plot: {str(e)}")
+                        #st.error("No se pudo generar el gráfico del backtest")
+
+                except Exception as e:
+                    logger.error(f"Error processing backtest: {str(e)}")
+                    st.error(f"Hubo un error ejecutando el backtest: {str(e)}")
+
             else:
                 st.warning("No se encontraron datos para esta consulta.")
                 

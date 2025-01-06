@@ -857,3 +857,666 @@ DETAIL:  Ya existe la llave (ticker, bar_date, bar_time, timeframe)=(AAPL, 2024-
 2025-01-06 10:58:51,624 - __main__ - INFO - Parsed query: {'ticker': 'MSFT', 'start_date': '2022-01-01', 'end_date': '2022-12-31', 'timeframe': 'daily'}
 2025-01-06 10:58:51,624 - src.agents.data_fetcher - INFO - Fetching data for ticker: MSFT, timeframe: daily, dates: 2022-01-01 to 2022-12-31
 2025-01-06 10:58:51,737 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 11:29:11,343 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 11:29:12,193 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 11:29:12,193 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 11:29:12,357 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 11:29:12,385 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 11:29:12,387 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 11:29:12,387 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 11:29:50,179 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 11:29:50,199 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 11:29:50,201 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 11:29:50,344 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 11:29:50,360 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 11:29:50,361 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 11:29:50,698 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 11:29:50,698 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 11:29:50,698 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 11:29:50,698 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 11:29:50,811 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 11:29:50,811 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 11:29:50,811 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 11:29:50,811 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 11:29:50,828 - src.agents.query_parser - INFO - Parsing query: Analiza Apple Inc con información diaria que incluya desde 2022 hasta 2024
+2025-01-06 11:29:51,616 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 11:29:51,633 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 11:29:51,636 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 11:29:51,636 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2024-12-31
+2025-01-06 11:29:51,750 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 11:29:55,582 - __main__ - ERROR - Error processing query: Indicator "rolling(C,20)" errored with exception: '_Array' object has no attribute '_get_axis_number'
+2025-01-06 13:40:33,048 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 13:40:38,498 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:40:38,498 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:40:38,819 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 13:40:39,061 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 13:40:39,062 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 13:40:39,063 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 13:40:58,085 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 13:40:58,100 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:40:58,102 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:40:58,268 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 13:40:58,275 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:40:58,276 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:40:58,541 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 13:40:58,541 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 13:40:58,541 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 13:40:58,541 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 13:40:58,698 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 13:40:58,698 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 13:40:58,698 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 13:40:58,698 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 13:40:58,698 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2023 y 2024
+2025-01-06 13:40:59,526 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 13:40:59,543 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2023-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 13:40:59,544 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2023-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 13:40:59,544 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2023-01-01 to 2024-12-31
+2025-01-06 13:40:59,679 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 13:41:02,953 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 13:41:05,030 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 13:41:05,032 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 502
+2025-01-06 13:41:05,039 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 13:41:05,040 - src.backtesting.two_sma - ERROR - Failed during rolling calculations: Indicator "rolling(C,20)" errored with exception: '_Array' object has no attribute '_get_axis_number'
+2025-01-06 13:41:05,041 - src.backtesting.two_sma - ERROR - Error during two_SMA_backtest: Indicator "rolling(C,20)" errored with exception: '_Array' object has no attribute '_get_axis_number'
+2025-01-06 13:41:05,042 - __main__ - ERROR - Error processing backtest: Indicator "rolling(C,20)" errored with exception: '_Array' object has no attribute '_get_axis_number'
+2025-01-06 13:53:28,099 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 13:53:28,999 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:53:28,999 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:53:29,169 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 13:53:29,198 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 13:53:29,198 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 13:53:29,198 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 13:53:39,444 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 13:53:39,451 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:53:39,451 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:53:39,680 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 13:53:39,682 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:53:39,682 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 13:53:39,837 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 13:53:39,837 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 13:53:39,837 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 13:53:39,837 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 13:53:40,098 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 13:53:40,098 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 13:53:40,098 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 13:53:40,098 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 13:53:40,105 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2023 y 2024
+2025-01-06 13:53:40,895 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 13:53:40,906 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2023-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 13:53:40,907 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2023-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 13:53:40,908 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2023-01-01 to 2024-12-31
+2025-01-06 13:53:41,006 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 13:53:41,417 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 13:53:42,271 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 13:53:42,282 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 502
+2025-01-06 13:53:42,287 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 13:53:42,301 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 13:53:42,419 - src.backtesting.two_sma - ERROR - Error during two_SMA_backtest: '_stats'
+2025-01-06 13:53:42,419 - __main__ - ERROR - Error processing backtest: '_stats'
+2025-01-06 14:24:57,449 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 14:24:58,447 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:24:58,447 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:24:58,608 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 14:24:58,631 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 14:24:58,631 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 14:24:58,631 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 14:25:08,152 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 14:25:08,167 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:25:08,169 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:25:08,286 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 14:25:08,286 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:25:08,286 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:25:08,511 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 14:25:08,511 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 14:25:08,511 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 14:25:08,527 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 14:25:08,646 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 14:25:08,646 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 14:25:08,646 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 14:25:08,646 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 14:25:08,646 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2022 y 2023
+2025-01-06 14:25:09,462 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 14:25:09,467 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 14:25:09,467 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 14:25:09,467 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2023-12-31
+2025-01-06 14:25:09,580 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 14:25:10,919 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 14:25:10,919 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 14:25:10,920 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 501
+2025-01-06 14:25:10,920 - src.backtesting.two_sma - ERROR - Error during two_SMA_backtest: commission should be between -10% (e.g. market-maker's rebates) and 10% (fees), is 0.1
+2025-01-06 14:25:10,920 - __main__ - ERROR - Error processing backtest: commission should be between -10% (e.g. market-maker's rebates) and 10% (fees), is 0.1
+2025-01-06 14:26:29,814 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 14:26:30,781 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:26:30,781 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:26:30,951 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 14:26:30,985 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 14:26:30,985 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 14:26:30,985 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 14:26:39,968 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 14:26:39,983 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:26:39,985 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:26:40,277 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 14:26:40,278 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 14:26:40,278 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 14:26:40,278 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 14:26:43,883 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 14:26:43,896 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:26:43,897 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 14:26:44,188 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 14:26:44,188 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 14:26:44,188 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 14:26:44,188 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 14:26:44,194 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2022 y 2023
+2025-01-06 14:26:45,032 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 14:26:45,043 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 14:26:45,045 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 14:26:45,045 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2023-12-31
+2025-01-06 14:26:45,150 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 14:26:46,285 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 14:26:46,286 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 14:26:46,287 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 501
+2025-01-06 14:26:46,287 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 14:26:46,292 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 14:26:46,331 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-06 14:26:46,332 - src.backtesting.two_sma - ERROR - Error during two_SMA_backtest: '_Stats' object has no attribute 'exposure_time'
+2025-01-06 14:26:46,332 - __main__ - ERROR - Error processing backtest: '_Stats' object has no attribute 'exposure_time'
+2025-01-06 18:23:55,105 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:23:56,571 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:23:56,572 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:23:56,716 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:23:56,780 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:23:56,781 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:23:56,781 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:24:08,318 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:24:08,326 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:24:08,328 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:24:08,604 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:24:08,604 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:24:08,604 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:24:08,738 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:24:08,754 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:24:08,754 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:24:08,754 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:24:08,906 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:24:08,906 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:24:08,906 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:24:08,906 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:24:08,906 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2022 y 2023
+2025-01-06 18:24:09,728 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 18:24:09,751 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 18:24:09,752 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 18:24:09,753 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2023-12-31
+2025-01-06 18:24:09,875 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 18:24:12,579 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 18:24:12,580 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 18:24:12,583 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 501
+2025-01-06 18:24:12,587 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 18:24:12,590 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 18:24:12,673 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-06 18:24:12,777 - src.database.operations - INFO - Saved backtest summary for ticker: AAPL
+2025-01-06 18:24:12,791 - src.backtesting.two_sma - INFO - Backtest summary saved with test_id=1
+2025-01-06 18:24:12,808 - src.database.operations - INFO - Saved 3 backtest detail records for test_id 1
+2025-01-06 18:24:12,811 - src.backtesting.two_sma - INFO - Backtest details saved for 3 trades
+2025-01-06 18:24:12,814 - __main__ - ERROR - Error processing backtest: '_stats'
+2025-01-06 18:37:48,509 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:37:49,441 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:37:49,442 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:37:49,607 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:37:49,642 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:37:49,642 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:37:49,643 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:38:00,456 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:38:00,468 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:38:00,470 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:38:00,596 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:38:00,599 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:38:00,599 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:38:00,919 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:38:00,919 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:38:00,928 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:38:00,928 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:38:01,009 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:38:01,012 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:38:01,013 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:38:01,014 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:38:01,021 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2022 y 2023
+2025-01-06 18:38:01,905 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 18:38:01,910 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 18:38:01,910 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 18:38:01,910 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2023-12-31
+2025-01-06 18:38:02,032 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 18:38:03,355 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 18:38:03,356 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 18:38:03,360 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 501
+2025-01-06 18:38:03,363 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 18:38:03,367 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 18:38:03,433 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-06 18:38:03,458 - src.database.operations - INFO - Saved backtest summary for ticker: AAPL
+2025-01-06 18:38:03,464 - src.backtesting.two_sma - INFO - Backtest summary saved with test_id=2
+2025-01-06 18:38:03,477 - src.database.operations - ERROR - Error saving backtest details: (psycopg2.errors.CheckViolation) el nuevo registro para la relación «backtest_details» viola la restricción «check» «backtest_details_position_size_check»
+DETAIL:  La fila que falla contiene (5, 2, 2, 2022-02-08, 00:00:00, 2022-03-02, 00:00:00, 152.427420, 172.170000, -56, 22 days, 12.95, -1105.58, null).
+
+[SQL: INSERT INTO backtest_details (test_id, trade_number, buy_date, buy_time, sell_date, sell_time, buy_price, sell_price, position_size) VALUES (%(test_id__0)s, %(trade_number__0)s, %(buy_date__0)s, %(buy_time__0)s, %(sell_date__0)s, %(sell_time__0)s, %( ... 3415 characters truncated ...  %(sell_date__20)s, %(sell_time__20)s, %(buy_price__20)s, %(sell_price__20)s, %(position_size__20)s)]
+[parameters: {'buy_date__0': datetime.date(2022, 1, 29), 'sell_time__0': datetime.time(0, 0), 'buy_price__0': 176.22605, 'test_id__0': 2, 'position_size__0': 56, 'trade_number__0': 1, 'buy_time__0': datetime.time(0, 0), 'sell_price__0': 152.58, 'sell_date__0': datetime.date(2022, 2, 8), 'buy_date__1': datetime.date(2022, 2, 8), 'sell_time__1': datetime.time(0, 0), 'buy_price__1': 152.42742, 'test_id__1': 2, 'position_size__1': -56, 'trade_number__1': 2, 'buy_time__1': datetime.time(0, 0), 'sell_price__1': 172.17, 'sell_date__1': datetime.date(2022, 3, 2), 'buy_date__2': datetime.date(2022, 3, 2), 'sell_time__2': datetime.time(0, 0), 'buy_price__2': 172.34216999999998, 'test_id__2': 2, 'position_size__2': 43, 'trade_number__2': 3, 'buy_time__2': datetime.time(0, 0), 'sell_price__2': 163.92, 'sell_date__2': datetime.date(2022, 3, 16), 'buy_date__3': datetime.date(2022, 3, 16), 'sell_time__3': datetime.time(0, 0), 'buy_price__3': 163.75608, 'test_id__3': 2, 'position_size__3': -44, 'trade_number__3': 4, 'buy_time__3': datetime.time(0, 0), 'sell_price__3': 144.345, 'sell_date__3': datetime.date(2022, 4, 20), 'buy_date__4': datetime.date(2022, 4, 20), 'sell_time__4': datetime.time(0, 0), 'buy_price__4': 144.489345, 'test_id__4': 2, 'position_size__4': 55, 'trade_number__4': 5, 'buy_time__4': datetime.time(0, 0), 'sell_price__4': 132.08, 'sell_date__4': datetime.date(2022, 4, 27), 'buy_date__5': datetime.date(2022, 4, 27), 'sell_time__5': datetime.time(0, 0), 'buy_price__5': 131.94792, 'test_id__5': 2, 'position_size__5': -55 ... 89 parameters truncated ... 'position_size__15': -51, 'trade_number__15': 16, 'buy_time__15': datetime.time(0, 0), 'sell_price__15': 189.485, 'sell_date__15': datetime.date(2023, 2, 25), 'buy_date__16': datetime.date(2023, 2, 25), 'sell_time__16': datetime.time(0, 0), 'buy_price__16': 189.674485, 'test_id__16': 2, 'position_size__16': 45, 'trade_number__16': 17, 'buy_time__16': datetime.time(0, 0), 'sell_price__16': 176.48, 'sell_date__16': datetime.date(2023, 3, 7), 'buy_date__17': datetime.date(2023, 3, 7), 'sell_time__17': datetime.time(0, 0), 'buy_price__17': 176.30352, 'test_id__17': 2, 'position_size__17': -45, 'trade_number__17': 18, 'buy_time__17': datetime.time(0, 0), 'sell_price__17': 180.07, 'sell_date__17': datetime.date(2023, 3, 25), 'buy_date__18': datetime.date(2023, 3, 25), 'sell_time__18': datetime.time(0, 0), 'buy_price__18': 180.25006999999997, 'test_id__18': 2, 'position_size__18': 43, 'trade_number__18': 19, 'buy_time__18': datetime.time(0, 0), 'sell_price__18': 166.91, 'sell_date__18': datetime.date(2023, 4, 5), 'buy_date__19': datetime.date(2023, 4, 5), 'sell_time__19': datetime.time(0, 0), 'buy_price__19': 166.74309, 'test_id__19': 2, 'position_size__19': -44, 'trade_number__19': 20, 'buy_time__19': datetime.time(0, 0), 'sell_price__19': 183.97, 'sell_date__19': datetime.date(2023, 4, 15), 'buy_date__20': datetime.date(2023, 4, 15), 'sell_time__20': datetime.time(0, 0), 'buy_price__20': 184.15397, 'test_id__20': 2, 'position_size__20': 35, 'trade_number__20': 21, 'buy_time__20': datetime.time(0, 0), 'sell_price__20': 193.9, 'sell_date__20': datetime.date(2023, 5, 18)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-06 18:38:03,477 - src.backtesting.two_sma - ERROR - Error during two_SMA_backtest: (psycopg2.errors.CheckViolation) el nuevo registro para la relación «backtest_details» viola la restricción «check» «backtest_details_position_size_check»
+DETAIL:  La fila que falla contiene (5, 2, 2, 2022-02-08, 00:00:00, 2022-03-02, 00:00:00, 152.427420, 172.170000, -56, 22 days, 12.95, -1105.58, null).
+
+[SQL: INSERT INTO backtest_details (test_id, trade_number, buy_date, buy_time, sell_date, sell_time, buy_price, sell_price, position_size) VALUES (%(test_id__0)s, %(trade_number__0)s, %(buy_date__0)s, %(buy_time__0)s, %(sell_date__0)s, %(sell_time__0)s, %( ... 3415 characters truncated ...  %(sell_date__20)s, %(sell_time__20)s, %(buy_price__20)s, %(sell_price__20)s, %(position_size__20)s)]
+[parameters: {'buy_date__0': datetime.date(2022, 1, 29), 'sell_time__0': datetime.time(0, 0), 'buy_price__0': 176.22605, 'test_id__0': 2, 'position_size__0': 56, 'trade_number__0': 1, 'buy_time__0': datetime.time(0, 0), 'sell_price__0': 152.58, 'sell_date__0': datetime.date(2022, 2, 8), 'buy_date__1': datetime.date(2022, 2, 8), 'sell_time__1': datetime.time(0, 0), 'buy_price__1': 152.42742, 'test_id__1': 2, 'position_size__1': -56, 'trade_number__1': 2, 'buy_time__1': datetime.time(0, 0), 'sell_price__1': 172.17, 'sell_date__1': datetime.date(2022, 3, 2), 'buy_date__2': datetime.date(2022, 3, 2), 'sell_time__2': datetime.time(0, 0), 'buy_price__2': 172.34216999999998, 'test_id__2': 2, 'position_size__2': 43, 'trade_number__2': 3, 'buy_time__2': datetime.time(0, 0), 'sell_price__2': 163.92, 'sell_date__2': datetime.date(2022, 3, 16), 'buy_date__3': datetime.date(2022, 3, 16), 'sell_time__3': datetime.time(0, 0), 'buy_price__3': 163.75608, 'test_id__3': 2, 'position_size__3': -44, 'trade_number__3': 4, 'buy_time__3': datetime.time(0, 0), 'sell_price__3': 144.345, 'sell_date__3': datetime.date(2022, 4, 20), 'buy_date__4': datetime.date(2022, 4, 20), 'sell_time__4': datetime.time(0, 0), 'buy_price__4': 144.489345, 'test_id__4': 2, 'position_size__4': 55, 'trade_number__4': 5, 'buy_time__4': datetime.time(0, 0), 'sell_price__4': 132.08, 'sell_date__4': datetime.date(2022, 4, 27), 'buy_date__5': datetime.date(2022, 4, 27), 'sell_time__5': datetime.time(0, 0), 'buy_price__5': 131.94792, 'test_id__5': 2, 'position_size__5': -55 ... 89 parameters truncated ... 'position_size__15': -51, 'trade_number__15': 16, 'buy_time__15': datetime.time(0, 0), 'sell_price__15': 189.485, 'sell_date__15': datetime.date(2023, 2, 25), 'buy_date__16': datetime.date(2023, 2, 25), 'sell_time__16': datetime.time(0, 0), 'buy_price__16': 189.674485, 'test_id__16': 2, 'position_size__16': 45, 'trade_number__16': 17, 'buy_time__16': datetime.time(0, 0), 'sell_price__16': 176.48, 'sell_date__16': datetime.date(2023, 3, 7), 'buy_date__17': datetime.date(2023, 3, 7), 'sell_time__17': datetime.time(0, 0), 'buy_price__17': 176.30352, 'test_id__17': 2, 'position_size__17': -45, 'trade_number__17': 18, 'buy_time__17': datetime.time(0, 0), 'sell_price__17': 180.07, 'sell_date__17': datetime.date(2023, 3, 25), 'buy_date__18': datetime.date(2023, 3, 25), 'sell_time__18': datetime.time(0, 0), 'buy_price__18': 180.25006999999997, 'test_id__18': 2, 'position_size__18': 43, 'trade_number__18': 19, 'buy_time__18': datetime.time(0, 0), 'sell_price__18': 166.91, 'sell_date__18': datetime.date(2023, 4, 5), 'buy_date__19': datetime.date(2023, 4, 5), 'sell_time__19': datetime.time(0, 0), 'buy_price__19': 166.74309, 'test_id__19': 2, 'position_size__19': -44, 'trade_number__19': 20, 'buy_time__19': datetime.time(0, 0), 'sell_price__19': 183.97, 'sell_date__19': datetime.date(2023, 4, 15), 'buy_date__20': datetime.date(2023, 4, 15), 'sell_time__20': datetime.time(0, 0), 'buy_price__20': 184.15397, 'test_id__20': 2, 'position_size__20': 35, 'trade_number__20': 21, 'buy_time__20': datetime.time(0, 0), 'sell_price__20': 193.9, 'sell_date__20': datetime.date(2023, 5, 18)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-06 18:38:03,481 - __main__ - ERROR - Error processing backtest: (psycopg2.errors.CheckViolation) el nuevo registro para la relación «backtest_details» viola la restricción «check» «backtest_details_position_size_check»
+DETAIL:  La fila que falla contiene (5, 2, 2, 2022-02-08, 00:00:00, 2022-03-02, 00:00:00, 152.427420, 172.170000, -56, 22 days, 12.95, -1105.58, null).
+
+[SQL: INSERT INTO backtest_details (test_id, trade_number, buy_date, buy_time, sell_date, sell_time, buy_price, sell_price, position_size) VALUES (%(test_id__0)s, %(trade_number__0)s, %(buy_date__0)s, %(buy_time__0)s, %(sell_date__0)s, %(sell_time__0)s, %( ... 3415 characters truncated ...  %(sell_date__20)s, %(sell_time__20)s, %(buy_price__20)s, %(sell_price__20)s, %(position_size__20)s)]
+[parameters: {'buy_date__0': datetime.date(2022, 1, 29), 'sell_time__0': datetime.time(0, 0), 'buy_price__0': 176.22605, 'test_id__0': 2, 'position_size__0': 56, 'trade_number__0': 1, 'buy_time__0': datetime.time(0, 0), 'sell_price__0': 152.58, 'sell_date__0': datetime.date(2022, 2, 8), 'buy_date__1': datetime.date(2022, 2, 8), 'sell_time__1': datetime.time(0, 0), 'buy_price__1': 152.42742, 'test_id__1': 2, 'position_size__1': -56, 'trade_number__1': 2, 'buy_time__1': datetime.time(0, 0), 'sell_price__1': 172.17, 'sell_date__1': datetime.date(2022, 3, 2), 'buy_date__2': datetime.date(2022, 3, 2), 'sell_time__2': datetime.time(0, 0), 'buy_price__2': 172.34216999999998, 'test_id__2': 2, 'position_size__2': 43, 'trade_number__2': 3, 'buy_time__2': datetime.time(0, 0), 'sell_price__2': 163.92, 'sell_date__2': datetime.date(2022, 3, 16), 'buy_date__3': datetime.date(2022, 3, 16), 'sell_time__3': datetime.time(0, 0), 'buy_price__3': 163.75608, 'test_id__3': 2, 'position_size__3': -44, 'trade_number__3': 4, 'buy_time__3': datetime.time(0, 0), 'sell_price__3': 144.345, 'sell_date__3': datetime.date(2022, 4, 20), 'buy_date__4': datetime.date(2022, 4, 20), 'sell_time__4': datetime.time(0, 0), 'buy_price__4': 144.489345, 'test_id__4': 2, 'position_size__4': 55, 'trade_number__4': 5, 'buy_time__4': datetime.time(0, 0), 'sell_price__4': 132.08, 'sell_date__4': datetime.date(2022, 4, 27), 'buy_date__5': datetime.date(2022, 4, 27), 'sell_time__5': datetime.time(0, 0), 'buy_price__5': 131.94792, 'test_id__5': 2, 'position_size__5': -55 ... 89 parameters truncated ... 'position_size__15': -51, 'trade_number__15': 16, 'buy_time__15': datetime.time(0, 0), 'sell_price__15': 189.485, 'sell_date__15': datetime.date(2023, 2, 25), 'buy_date__16': datetime.date(2023, 2, 25), 'sell_time__16': datetime.time(0, 0), 'buy_price__16': 189.674485, 'test_id__16': 2, 'position_size__16': 45, 'trade_number__16': 17, 'buy_time__16': datetime.time(0, 0), 'sell_price__16': 176.48, 'sell_date__16': datetime.date(2023, 3, 7), 'buy_date__17': datetime.date(2023, 3, 7), 'sell_time__17': datetime.time(0, 0), 'buy_price__17': 176.30352, 'test_id__17': 2, 'position_size__17': -45, 'trade_number__17': 18, 'buy_time__17': datetime.time(0, 0), 'sell_price__17': 180.07, 'sell_date__17': datetime.date(2023, 3, 25), 'buy_date__18': datetime.date(2023, 3, 25), 'sell_time__18': datetime.time(0, 0), 'buy_price__18': 180.25006999999997, 'test_id__18': 2, 'position_size__18': 43, 'trade_number__18': 19, 'buy_time__18': datetime.time(0, 0), 'sell_price__18': 166.91, 'sell_date__18': datetime.date(2023, 4, 5), 'buy_date__19': datetime.date(2023, 4, 5), 'sell_time__19': datetime.time(0, 0), 'buy_price__19': 166.74309, 'test_id__19': 2, 'position_size__19': -44, 'trade_number__19': 20, 'buy_time__19': datetime.time(0, 0), 'sell_price__19': 183.97, 'sell_date__19': datetime.date(2023, 4, 15), 'buy_date__20': datetime.date(2023, 4, 15), 'sell_time__20': datetime.time(0, 0), 'buy_price__20': 184.15397, 'test_id__20': 2, 'position_size__20': 35, 'trade_number__20': 21, 'buy_time__20': datetime.time(0, 0), 'sell_price__20': 193.9, 'sell_date__20': datetime.date(2023, 5, 18)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-06 18:44:34,118 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:44:35,135 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:44:35,135 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:44:35,291 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:44:35,319 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:44:35,319 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:44:35,319 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:44:43,636 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:44:43,643 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:44:43,643 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:44:43,852 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:44:43,859 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:44:43,859 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:44:44,078 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:44:44,078 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:44:44,078 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:44:44,080 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:44:44,157 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:44:44,158 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:44:44,159 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:44:44,159 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:44:44,161 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2022 y 2023
+2025-01-06 18:44:44,942 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 18:44:44,959 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 18:44:44,961 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 18:44:44,962 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2023-12-31
+2025-01-06 18:44:45,065 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 18:44:46,159 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 18:44:46,159 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 18:44:46,159 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 501
+2025-01-06 18:44:46,159 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 18:44:46,159 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 18:44:46,209 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-06 18:44:46,259 - src.database.operations - INFO - Saved backtest summary for ticker: AAPL
+2025-01-06 18:44:46,272 - src.backtesting.two_sma - INFO - Backtest summary saved with test_id=3
+2025-01-06 18:44:46,280 - src.database.operations - INFO - Saved 1 backtest detail records for test_id 3
+2025-01-06 18:44:46,281 - src.backtesting.two_sma - INFO - Backtest details saved for 1 trades
+2025-01-06 18:44:46,359 - __main__ - ERROR - Error processing backtest: matplotlib is required for plotting when the default backend "matplotlib" is selected.
+2025-01-06 18:53:31,516 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:53:32,451 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:53:32,462 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:53:32,609 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:53:32,642 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:53:32,643 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:53:32,643 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:53:44,245 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:53:44,255 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:53:44,256 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:53:44,403 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 18:53:44,403 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:53:44,403 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 18:53:44,699 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:53:44,700 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:53:44,700 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:53:44,700 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:53:44,817 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 18:53:44,817 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 18:53:44,817 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 18:53:44,817 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 18:53:44,817 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2022 y 2023
+2025-01-06 18:53:45,641 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 18:53:45,658 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 18:53:45,661 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 18:53:45,663 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2023-12-31
+2025-01-06 18:53:45,783 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 18:53:47,153 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 18:53:47,153 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 18:53:47,155 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 501
+2025-01-06 18:53:47,156 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 18:53:47,157 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 18:53:47,210 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-06 18:53:47,249 - src.database.operations - INFO - Saved backtest summary for ticker: AAPL
+2025-01-06 18:53:47,262 - src.backtesting.two_sma - INFO - Backtest summary saved with test_id=4
+2025-01-06 18:53:47,269 - src.database.operations - INFO - Saved 1 backtest detail records for test_id 4
+2025-01-06 18:53:47,270 - src.backtesting.two_sma - INFO - Backtest details saved for 1 trades
+2025-01-06 18:53:47,327 - __main__ - ERROR - Error generating backtest plot: matplotlib is required for plotting when the default backend "matplotlib" is selected.
+2025-01-06 19:00:49,986 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:00:52,818 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:00:52,819 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:00:53,078 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:00:53,230 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:00:53,230 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:00:53,232 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:01:03,075 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:01:03,081 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:01:03,083 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:01:03,238 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:01:03,238 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:01:03,238 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:01:03,472 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:01:03,472 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:01:03,472 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:01:03,472 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:01:03,570 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:01:03,579 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:01:03,579 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:01:03,579 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:01:03,588 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2022 y 2023
+2025-01-06 19:01:04,531 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 19:01:04,548 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 19:01:04,549 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 19:01:04,549 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2023-12-31
+2025-01-06 19:01:04,721 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 19:01:07,493 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 19:01:07,493 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 19:01:07,509 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 501
+2025-01-06 19:01:07,514 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 19:01:07,520 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 19:01:07,568 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-06 19:01:07,611 - src.database.operations - INFO - Saved backtest summary for ticker: AAPL
+2025-01-06 19:01:07,621 - src.backtesting.two_sma - INFO - Backtest summary saved with test_id=5
+2025-01-06 19:01:07,629 - src.database.operations - INFO - Saved 1 backtest detail records for test_id 5
+2025-01-06 19:01:07,630 - src.backtesting.two_sma - INFO - Backtest details saved for 1 trades
+2025-01-06 19:01:07,684 - __main__ - ERROR - Error generating backtest plot: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+2025-01-06 19:02:39,678 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:02:41,045 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:02:41,052 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:02:41,207 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:02:41,265 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:02:41,266 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:02:41,266 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:02:55,126 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:02:55,134 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:02:55,134 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:02:55,309 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:02:55,318 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:02:55,318 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:02:55,442 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:02:55,442 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:02:55,442 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:02:55,442 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:02:55,619 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:02:55,619 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:02:55,619 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:02:55,622 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:02:55,622 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL del 2021 al 2024
+2025-01-06 19:02:56,536 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 19:02:56,558 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2021-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 19:02:56,559 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2021-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 19:02:56,559 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2021-01-01 to 2024-12-31
+2025-01-06 19:02:56,678 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 19:02:59,275 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 19:02:59,290 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 19:02:59,292 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 1005
+2025-01-06 19:02:59,311 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 19:02:59,317 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 19:02:59,431 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-06 19:02:59,492 - src.database.operations - INFO - Saved backtest summary for ticker: AAPL
+2025-01-06 19:02:59,504 - src.backtesting.two_sma - INFO - Backtest summary saved with test_id=6
+2025-01-06 19:02:59,511 - src.database.operations - ERROR - Error saving backtest details: (psycopg2.errors.CheckViolation) el nuevo registro para la relación «backtest_details» viola la restricción «check» «backtest_details_position_size_check»
+DETAIL:  La fila que falla contiene (9, 6, 1, 2021-02-01, 00:00:00, 2021-02-28, 00:00:00, 134.215650, 122.820000, -17, 27 days, -8.49, 193.73, null).
+
+[SQL: INSERT INTO backtest_details (test_id, trade_number, buy_date, buy_time, sell_date, sell_time, buy_price, sell_price, position_size) VALUES (%(test_id__0)s, %(trade_number__0)s, %(buy_date__0)s, %(buy_time__0)s, %(sell_date__0)s, %(sell_time__0)s, %(buy_price__0)s, %(sell_price__0)s, %(position_size__0)s), (%(test_id__1)s, %(trade_number__1)s, %(buy_date__1)s, %(buy_time__1)s, %(sell_date__1)s, %(sell_time__1)s, %(buy_price__1)s, %(sell_price__1)s, %(position_size__1)s)]
+[parameters: {'sell_date__0': datetime.date(2021, 2, 28), 'buy_date__0': datetime.date(2021, 2, 1), 'sell_price__0': 122.82, 'position_size__0': -17, 'trade_number__0': 1, 'buy_time__0': datetime.time(0, 0), 'buy_price__0': 134.21564999999998, 'sell_time__0': datetime.time(0, 0), 'test_id__0': 6, 'sell_date__1': datetime.date(2023, 9, 21), 'buy_date__1': datetime.date(2021, 2, 1), 'sell_price__1': 247.77, 'position_size__1': -57, 'trade_number__1': 2, 'buy_time__1': datetime.time(0, 0), 'buy_price__1': 134.21564999999998, 'sell_time__1': datetime.time(0, 0), 'test_id__1': 6}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-06 19:02:59,525 - src.backtesting.two_sma - ERROR - Error during two_SMA_backtest: (psycopg2.errors.CheckViolation) el nuevo registro para la relación «backtest_details» viola la restricción «check» «backtest_details_position_size_check»
+DETAIL:  La fila que falla contiene (9, 6, 1, 2021-02-01, 00:00:00, 2021-02-28, 00:00:00, 134.215650, 122.820000, -17, 27 days, -8.49, 193.73, null).
+
+[SQL: INSERT INTO backtest_details (test_id, trade_number, buy_date, buy_time, sell_date, sell_time, buy_price, sell_price, position_size) VALUES (%(test_id__0)s, %(trade_number__0)s, %(buy_date__0)s, %(buy_time__0)s, %(sell_date__0)s, %(sell_time__0)s, %(buy_price__0)s, %(sell_price__0)s, %(position_size__0)s), (%(test_id__1)s, %(trade_number__1)s, %(buy_date__1)s, %(buy_time__1)s, %(sell_date__1)s, %(sell_time__1)s, %(buy_price__1)s, %(sell_price__1)s, %(position_size__1)s)]
+[parameters: {'sell_date__0': datetime.date(2021, 2, 28), 'buy_date__0': datetime.date(2021, 2, 1), 'sell_price__0': 122.82, 'position_size__0': -17, 'trade_number__0': 1, 'buy_time__0': datetime.time(0, 0), 'buy_price__0': 134.21564999999998, 'sell_time__0': datetime.time(0, 0), 'test_id__0': 6, 'sell_date__1': datetime.date(2023, 9, 21), 'buy_date__1': datetime.date(2021, 2, 1), 'sell_price__1': 247.77, 'position_size__1': -57, 'trade_number__1': 2, 'buy_time__1': datetime.time(0, 0), 'buy_price__1': 134.21564999999998, 'sell_time__1': datetime.time(0, 0), 'test_id__1': 6}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-06 19:02:59,526 - __main__ - ERROR - Error processing backtest: (psycopg2.errors.CheckViolation) el nuevo registro para la relación «backtest_details» viola la restricción «check» «backtest_details_position_size_check»
+DETAIL:  La fila que falla contiene (9, 6, 1, 2021-02-01, 00:00:00, 2021-02-28, 00:00:00, 134.215650, 122.820000, -17, 27 days, -8.49, 193.73, null).
+
+[SQL: INSERT INTO backtest_details (test_id, trade_number, buy_date, buy_time, sell_date, sell_time, buy_price, sell_price, position_size) VALUES (%(test_id__0)s, %(trade_number__0)s, %(buy_date__0)s, %(buy_time__0)s, %(sell_date__0)s, %(sell_time__0)s, %(buy_price__0)s, %(sell_price__0)s, %(position_size__0)s), (%(test_id__1)s, %(trade_number__1)s, %(buy_date__1)s, %(buy_time__1)s, %(sell_date__1)s, %(sell_time__1)s, %(buy_price__1)s, %(sell_price__1)s, %(position_size__1)s)]
+[parameters: {'sell_date__0': datetime.date(2021, 2, 28), 'buy_date__0': datetime.date(2021, 2, 1), 'sell_price__0': 122.82, 'position_size__0': -17, 'trade_number__0': 1, 'buy_time__0': datetime.time(0, 0), 'buy_price__0': 134.21564999999998, 'sell_time__0': datetime.time(0, 0), 'test_id__0': 6, 'sell_date__1': datetime.date(2023, 9, 21), 'buy_date__1': datetime.date(2021, 2, 1), 'sell_price__1': 247.77, 'position_size__1': -57, 'trade_number__1': 2, 'buy_time__1': datetime.time(0, 0), 'buy_price__1': 134.21564999999998, 'sell_time__1': datetime.time(0, 0), 'test_id__1': 6}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-06 19:03:29,121 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:03:29,129 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:03:29,130 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:03:29,259 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:03:29,261 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:03:29,261 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:03:29,473 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:03:29,473 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:03:29,473 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:03:29,473 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:03:29,630 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:03:29,630 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:03:29,630 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:03:29,630 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:03:29,639 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL del 2022 al 2023
+2025-01-06 19:03:30,581 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 19:03:30,583 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 19:03:30,583 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 19:03:30,583 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2023-12-31
+2025-01-06 19:03:30,693 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 19:03:30,850 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 19:03:30,851 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 19:03:30,854 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 501
+2025-01-06 19:03:30,859 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 19:03:30,860 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 19:03:30,913 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-06 19:03:30,917 - src.database.operations - INFO - Saved backtest summary for ticker: AAPL
+2025-01-06 19:03:30,933 - src.backtesting.two_sma - INFO - Backtest summary saved with test_id=7
+2025-01-06 19:03:30,943 - src.database.operations - INFO - Saved 1 backtest detail records for test_id 7
+2025-01-06 19:03:30,944 - src.backtesting.two_sma - INFO - Backtest details saved for 1 trades
+2025-01-06 19:03:31,003 - __main__ - ERROR - Error generating backtest plot: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+2025-01-06 19:13:22,183 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:13:23,153 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:13:23,153 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:13:23,299 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:13:23,333 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:13:23,333 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:13:23,333 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:13:31,463 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:13:31,471 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:13:31,473 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:13:31,701 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:13:31,709 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:13:31,711 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:13:31,849 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:13:31,849 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:13:31,849 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:13:31,849 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:13:32,065 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:13:32,065 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:13:32,065 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:13:32,065 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:13:32,065 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2022 y 2023
+2025-01-06 19:13:32,814 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 19:13:32,828 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 19:13:32,829 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 19:13:32,830 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2023-12-31
+2025-01-06 19:13:32,907 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 19:13:34,093 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 19:13:34,094 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 19:13:34,095 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 501
+2025-01-06 19:13:34,096 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 19:13:34,097 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 19:13:34,122 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-06 19:13:34,144 - src.database.operations - INFO - Saved backtest summary for ticker: AAPL
+2025-01-06 19:13:34,149 - src.backtesting.two_sma - INFO - Backtest summary saved with test_id=8
+2025-01-06 19:13:34,154 - src.database.operations - INFO - Saved 1 backtest detail records for test_id 8
+2025-01-06 19:13:34,155 - src.backtesting.two_sma - INFO - Backtest details saved for 1 trades
+2025-01-06 19:13:34,285 - __main__ - ERROR - Error generating backtest plot: no numeric data to plot
+2025-01-06 19:19:11,794 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:19:12,751 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:19:12,751 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:19:12,908 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:19:12,946 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:19:12,946 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:19:12,946 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:19:24,851 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:19:24,862 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:19:24,864 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:19:25,008 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:19:25,016 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:19:25,016 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:19:25,254 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:19:25,254 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:19:25,254 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:19:25,254 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:19:25,312 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:19:25,312 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:19:25,312 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:19:25,312 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:19:25,330 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de Apple Inc de 2022 y 2023
+2025-01-06 19:19:26,484 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 19:19:26,524 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 19:19:26,526 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 19:19:26,527 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2023-12-31
+2025-01-06 19:19:26,635 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 19:19:28,137 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 19:19:28,137 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 19:19:28,151 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 501
+2025-01-06 19:19:28,160 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 19:19:28,164 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 19:19:28,254 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-06 19:19:28,286 - src.database.operations - INFO - Saved backtest summary for ticker: AAPL
+2025-01-06 19:19:28,299 - src.backtesting.two_sma - INFO - Backtest summary saved with test_id=9
+2025-01-06 19:19:28,307 - src.database.operations - INFO - Saved 1 backtest detail records for test_id 9
+2025-01-06 19:19:28,307 - src.backtesting.two_sma - INFO - Backtest details saved for 1 trades
+2025-01-06 19:26:40,325 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:26:41,341 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:26:41,341 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:26:41,492 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:26:41,527 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:26:41,527 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:26:41,527 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:26:54,681 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:26:54,690 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:26:54,692 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:26:54,875 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 19:26:54,882 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:26:54,882 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 19:26:55,117 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:26:55,117 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:26:55,117 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:26:55,117 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:26:55,215 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 19:26:55,216 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 19:26:55,217 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 19:26:55,217 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 19:26:55,219 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2022 y 2023
+2025-01-06 19:26:55,990 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 19:26:56,002 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 19:26:56,003 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2022-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 19:26:56,003 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2022-01-01 to 2023-12-31
+2025-01-06 19:26:56,113 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 19:26:57,601 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-06 19:26:57,603 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-06 19:26:57,609 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 501
+2025-01-06 19:26:57,621 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-06 19:26:57,625 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-06 19:26:57,687 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-06 19:26:57,716 - src.database.operations - INFO - Saved backtest summary for ticker: AAPL
+2025-01-06 19:26:57,733 - src.backtesting.two_sma - INFO - Backtest summary saved with test_id=10
+2025-01-06 19:26:57,742 - src.database.operations - INFO - Saved 1 backtest detail records for test_id 10
+2025-01-06 19:26:57,743 - src.backtesting.two_sma - INFO - Backtest details saved for 1 trades

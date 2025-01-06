@@ -110,7 +110,7 @@ def main():
                 fig = px.line(
                     data,
                     x='bar_date',
-                    y=['open_price', 'close_price', 'high_price', 'low_price'],
+                    y=['close_price'],
                     labels={
                         'bar_date': 'Fecha',
                         'value': 'Precio',

@@ -23,6 +23,7 @@ class QueryParser:
                     {"role": "system", "content": """
                     You are a financial query parser that extracts and translates information from natural language queries.
                     You must interpret relative date references and convert them to actual dates in YYYY-MM-DD format.
+                    You must be able to find the ticker if instead of the stock symbol, the company name is mentioned.
                     
                     Examples of date translations:
                     - "last month" -> Start: First day of previous month, End: Last day of previous month
@@ -31,6 +32,8 @@ class QueryParser:
                     - "2023" -> Start: 2023-01-01, End: 2023-12-31
                      
                     If you are unable to determine the exact date, return the closest possible date range.
+                     
+                    If you are unable to determine the Timeframe, return the default Timeframe as "daily".
                     
                     Return information in this exact format:
                     - Ticker: [SYMBOL]

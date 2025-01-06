@@ -39,7 +39,11 @@ class DataFetcher:
                 self.db_ops.save_stock_data(api_data)
                 logger.info("Fetched data saved to database")
                 
-                return api_data
+                data = self.db_ops.get_stock_data(ticker, start_date, end_date, timeframe)
+                if data is not None and not data.empty:
+                    logger.info("Data extracted from database after API fetch")
+                    return data
+
             else:
                 logger.warning("No data returned from API")
                 return None

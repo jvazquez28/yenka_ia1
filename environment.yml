@@ -1,0 +1,21 @@
+name: yenka_ia1
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - plotly
+  - pytest
+  - requests
+  - streamlit
+  - conda-forge::pandas-ta
+  - conda-forge::yfinance
+  - scikit-learn
+  - langchain
+  - python-dotenv
+  - langchain-community
+  - openai
+  - psycopg2[version='>=2.9.0']
+  - sqlalchemy[version='>=1.4.0']
+  - psycopg2-binary[version='>=2.9.9']
+prefix: C:\Users\jvazq\Data_Analysis_Tools\anaconda3\envs\yenka_ia1

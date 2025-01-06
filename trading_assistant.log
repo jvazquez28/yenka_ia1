@@ -483,3 +483,377 @@ DETAIL:  Ya existe la llave (ticker, bar_date, bar_time, timeframe)=(AAPL, 2024-
 2024-12-19 19:56:10,183 - __main__ - INFO - Parsed query: {'ticker': 'MSFT', 'start_date': '2000-01-01', 'end_date': '2023-10-24', 'timeframe': 'weekly'}
 2024-12-19 19:56:10,183 - src.agents.data_fetcher - INFO - Fetching data for ticker: MSFT, timeframe: weekly, dates: 2000-01-01 to 2023-10-24
 2024-12-19 19:56:10,249 - src.agents.data_fetcher - INFO - Data retrieved from database
+2024-12-20 13:43:12,196 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-20 13:43:18,694 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:43:18,695 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:43:18,970 - __main__ - INFO - QueryParser initialized successfully
+2024-12-20 13:43:19,261 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-20 13:43:19,261 - __main__ - INFO - Database operations initialized successfully
+2024-12-20 13:43:19,263 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-20 13:44:11,551 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-20 13:44:11,557 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:44:11,559 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:44:11,806 - __main__ - INFO - QueryParser initialized successfully
+2024-12-20 13:44:11,807 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-20 13:44:11,808 - __main__ - INFO - Database operations initialized successfully
+2024-12-20 13:44:11,808 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-20 13:44:11,811 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL del último año
+2024-12-20 13:44:12,526 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-20 13:44:12,535 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2021-08-26', 'end_date': '2022-08-26', 'timeframe': 'daily'}
+2024-12-20 13:44:12,535 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2021-08-26', 'end_date': '2022-08-26', 'timeframe': 'daily'}
+2024-12-20 13:44:12,535 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2021-08-26 to 2022-08-26
+2024-12-20 13:44:12,763 - src.agents.data_fetcher - INFO - Data retrieved from database
+2024-12-20 13:46:39,614 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-20 13:46:39,623 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:46:39,626 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:46:39,781 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-20 13:46:39,789 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:46:39,789 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:46:40,028 - __main__ - INFO - QueryParser initialized successfully
+2024-12-20 13:46:40,029 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-20 13:46:40,030 - __main__ - INFO - Database operations initialized successfully
+2024-12-20 13:46:40,030 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-20 13:46:40,106 - __main__ - INFO - QueryParser initialized successfully
+2024-12-20 13:46:40,111 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-20 13:46:40,111 - __main__ - INFO - Database operations initialized successfully
+2024-12-20 13:46:40,113 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-20 13:46:40,120 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2023
+2024-12-20 13:46:40,816 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-20 13:46:40,823 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2023-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2024-12-20 13:46:40,823 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2023-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2024-12-20 13:46:40,825 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2023-01-01 to 2023-12-31
+2024-12-20 13:46:40,940 - src.agents.data_fetcher - INFO - Data retrieved from database
+2024-12-20 13:49:40,225 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-20 13:49:41,172 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:49:41,173 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:49:41,322 - __main__ - INFO - QueryParser initialized successfully
+2024-12-20 13:49:41,367 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-20 13:49:41,367 - __main__ - INFO - Database operations initialized successfully
+2024-12-20 13:49:41,367 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-20 13:50:11,951 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-20 13:50:11,959 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:50:11,961 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:50:12,053 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2024-12-20 13:50:12,060 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:50:12,063 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2024-12-20 13:50:12,299 - __main__ - INFO - QueryParser initialized successfully
+2024-12-20 13:50:12,300 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-20 13:50:12,300 - __main__ - INFO - Database operations initialized successfully
+2024-12-20 13:50:12,301 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-20 13:50:12,375 - __main__ - INFO - QueryParser initialized successfully
+2024-12-20 13:50:12,375 - src.database.operations - INFO - PostgreSQL database connection initialized
+2024-12-20 13:50:12,375 - __main__ - INFO - Database operations initialized successfully
+2024-12-20 13:50:12,377 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2024-12-20 13:50:12,380 - src.agents.query_parser - INFO - Parsing query: Muestra datos semanales de Tesla Motors para los años de 2020 a 2023
+2024-12-20 13:50:13,103 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-20 13:50:13,119 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'TSLA', 'start_date': '2020-01-01', 'end_date': '2023-12-31', 'timeframe': 'weekly'}
+2024-12-20 13:50:13,120 - __main__ - INFO - Parsed query: {'ticker': 'TSLA', 'start_date': '2020-01-01', 'end_date': '2023-12-31', 'timeframe': 'weekly'}
+2024-12-20 13:50:13,121 - src.agents.data_fetcher - INFO - Fetching data for ticker: TSLA, timeframe: weekly, dates: 2020-01-01 to 2023-12-31
+2024-12-20 13:50:13,231 - src.agents.data_fetcher - INFO - Data not found in database. Fetching from API
+2024-12-20 13:50:14,145 - src.api.alpha_vantage - INFO - Fetched 755 records from Alpha Vantage for ticker: TSLA
+2024-12-20 13:50:14,147 - src.agents.data_fetcher - INFO - Data fetched from API successfully
+2024-12-20 13:50:14,201 - src.database.operations - INFO - Added new fundamental data for ticker: TSLA
+2024-12-20 13:50:14,398 - src.database.operations - INFO - Saved 755 new OHLC records for ticker: TSLA
+2024-12-20 13:50:14,401 - src.agents.data_fetcher - INFO - Fetched data saved to database
+2025-01-06 09:18:18,454 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 09:18:25,202 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:18:25,203 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:18:25,593 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 09:18:25,904 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 09:18:25,904 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 09:18:25,904 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 09:21:11,829 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 09:21:11,838 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:21:11,839 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:21:11,961 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 09:21:11,973 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:21:11,975 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:21:12,342 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 09:21:12,353 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 09:21:12,353 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 09:21:12,353 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 09:21:12,454 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 09:21:12,454 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 09:21:12,454 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 09:21:12,454 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 09:21:12,472 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de Apple, Inc. incluyendo todo el año 2024
+2025-01-06 09:21:13,942 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 09:21:13,955 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2024-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 09:21:13,955 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2024-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 09:21:13,955 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2024-01-01 to 2024-12-31
+2025-01-06 09:21:14,171 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 09:48:46,304 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 09:48:47,174 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:48:47,174 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:48:47,323 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 09:48:47,356 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 09:48:47,356 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 09:48:47,357 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 09:49:00,110 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 09:49:00,118 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:49:00,122 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:49:00,277 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 09:49:00,277 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:49:00,277 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 09:49:00,566 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 09:49:00,566 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 09:49:00,566 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 09:49:00,566 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 09:49:00,708 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 09:49:00,709 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 09:49:00,709 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 09:49:00,709 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 09:49:00,709 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de todo 2024
+2025-01-06 09:49:01,623 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 09:49:01,639 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2024-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 09:49:01,639 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2024-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 09:49:01,640 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2024-01-01 to 2024-12-31
+2025-01-06 09:49:01,759 - src.agents.data_fetcher - INFO - Data not found in database. Fetching from API
+2025-01-06 09:49:03,483 - src.api.alpha_vantage - INFO - Fetched 6334 records from Alpha Vantage for ticker: AAPL
+2025-01-06 09:49:03,484 - src.agents.data_fetcher - INFO - Data fetched from API successfully
+2025-01-06 09:49:04,119 - src.database.operations - INFO - Saved 10 new OHLC records for ticker: AAPL
+2025-01-06 09:49:04,119 - src.database.operations - INFO - Skipped 6324 existing records for ticker: AAPL
+2025-01-06 09:49:04,119 - src.agents.data_fetcher - INFO - Fetched data saved to database
+2025-01-06 10:05:28,475 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:05:29,342 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:05:29,342 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:05:29,500 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:05:29,535 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:05:29,535 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:05:29,536 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:06:00,134 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:06:00,141 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:06:00,145 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:06:00,233 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:06:00,252 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:06:00,254 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:06:00,598 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:06:00,607 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:06:00,609 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:06:00,609 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:06:00,715 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:06:00,715 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:06:00,715 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:06:00,715 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:06:00,732 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de Apple Inc del año pasado con respecto al día de hoy
+2025-01-06 10:06:01,589 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 10:06:01,602 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2021-07-29', 'end_date': '2022-07-29', 'timeframe': 'daily'}
+2025-01-06 10:06:01,603 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2021-07-29', 'end_date': '2022-07-29', 'timeframe': 'daily'}
+2025-01-06 10:06:01,603 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2021-07-29 to 2022-07-29
+2025-01-06 10:06:01,718 - src.database.operations - ERROR - Error retrieving stock data: '>=' not supported between instances of 'datetime.date' and 'str'
+2025-01-06 10:06:01,719 - src.agents.data_fetcher - ERROR - Error fetching data: '>=' not supported between instances of 'datetime.date' and 'str'
+2025-01-06 10:06:01,719 - __main__ - ERROR - Error processing query: '>=' not supported between instances of 'datetime.date' and 'str'
+2025-01-06 10:06:16,912 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:06:16,919 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:06:16,921 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:06:17,050 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:06:17,071 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:06:17,073 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:06:17,404 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:06:17,404 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:06:17,404 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:06:17,404 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:06:17,565 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:06:17,565 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:06:17,565 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:06:17,565 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:06:17,565 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de Apple Inc de 2024
+2025-01-06 10:06:18,300 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 10:06:18,300 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2024-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 10:06:18,300 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2024-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 10:06:18,300 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2024-01-01 to 2024-12-31
+2025-01-06 10:06:18,399 - src.database.operations - ERROR - Error retrieving stock data: '>=' not supported between instances of 'datetime.date' and 'str'
+2025-01-06 10:06:18,399 - src.agents.data_fetcher - ERROR - Error fetching data: '>=' not supported between instances of 'datetime.date' and 'str'
+2025-01-06 10:06:18,399 - __main__ - ERROR - Error processing query: '>=' not supported between instances of 'datetime.date' and 'str'
+2025-01-06 10:15:57,405 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:15:58,298 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:15:58,298 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:15:58,470 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:15:58,507 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:15:58,507 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:15:58,508 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:16:06,562 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:16:06,577 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:16:06,578 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:16:06,763 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:16:06,763 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:16:06,763 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:16:07,055 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:16:07,055 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:16:07,055 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:16:07,055 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:16:07,174 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:16:07,174 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:16:07,174 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:16:07,174 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:16:07,190 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2023
+2025-01-06 10:16:07,993 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 10:16:08,015 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2023-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 10:16:08,016 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2023-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 10:16:08,017 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2023-01-01 to 2023-12-31
+2025-01-06 10:16:08,131 - src.agents.data_fetcher - INFO - Data not found in database. Fetching from API
+2025-01-06 10:16:09,110 - src.api.alpha_vantage - INFO - Fetched 6334 records from Alpha Vantage for ticker: AAPL
+2025-01-06 10:16:09,112 - src.agents.data_fetcher - INFO - Data fetched from API successfully
+2025-01-06 10:16:09,743 - src.database.operations - INFO - No new records to save for ticker: AAPL
+2025-01-06 10:16:09,744 - src.database.operations - INFO - Skipped 6334 existing records for ticker: AAPL
+2025-01-06 10:16:09,747 - src.agents.data_fetcher - INFO - Fetched data saved to database
+2025-01-06 10:33:28,805 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:33:29,674 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:33:29,674 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:33:29,827 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:33:29,862 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:33:29,862 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:33:29,862 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:33:37,832 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:33:37,840 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:33:37,841 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:33:37,974 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:33:37,986 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:33:37,988 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:33:38,346 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:33:38,346 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:33:38,346 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:33:38,346 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:33:38,458 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:33:38,474 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:33:38,475 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:33:38,475 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:33:38,483 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de AAPL de 2024
+2025-01-06 10:33:39,291 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 10:33:39,312 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'AAPL', 'start_date': '2024-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 10:33:39,312 - __main__ - INFO - Parsed query: {'ticker': 'AAPL', 'start_date': '2024-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-06 10:33:39,312 - src.agents.data_fetcher - INFO - Fetching data for ticker: AAPL, timeframe: daily, dates: 2024-01-01 to 2024-12-31
+2025-01-06 10:33:39,424 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 10:49:39,483 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:49:40,363 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:49:40,377 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:49:40,527 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:49:40,563 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:49:40,563 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:49:40,563 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:50:01,939 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:50:01,951 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:50:01,953 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:50:02,096 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:50:02,105 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:50:02,105 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:50:02,413 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:50:02,413 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:50:02,413 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:50:02,413 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:50:02,513 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:50:02,513 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:50:02,513 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:50:02,513 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:50:02,529 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de SodaStream de todo 2022
+2025-01-06 10:50:03,314 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 10:50:03,331 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'SODA', 'start_date': '2022-01-01', 'end_date': '2022-12-31', 'timeframe': 'daily'}
+2025-01-06 10:50:03,331 - __main__ - INFO - Parsed query: {'ticker': 'SODA', 'start_date': '2022-01-01', 'end_date': '2022-12-31', 'timeframe': 'daily'}
+2025-01-06 10:50:03,331 - src.agents.data_fetcher - INFO - Fetching data for ticker: SODA, timeframe: daily, dates: 2022-01-01 to 2022-12-31
+2025-01-06 10:50:03,439 - src.agents.data_fetcher - INFO - Data not found in database. Fetching from API
+2025-01-06 10:50:05,374 - src.api.alpha_vantage - INFO - Fetched 2036 records from Alpha Vantage for ticker: SODA
+2025-01-06 10:50:05,375 - src.agents.data_fetcher - INFO - Data fetched from API successfully
+2025-01-06 10:50:05,413 - src.database.operations - INFO - Added new fundamental data for ticker: SODA
+2025-01-06 10:50:05,950 - src.database.operations - INFO - Saved 2036 new OHLC records for ticker: SODA
+2025-01-06 10:50:05,954 - src.agents.data_fetcher - INFO - Fetched data saved to database
+2025-01-06 10:50:22,796 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:50:22,806 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:50:22,807 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:50:23,424 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:50:23,424 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:50:23,424 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:50:23,424 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:54:55,233 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:54:55,240 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:54:55,243 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:54:55,436 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:54:55,436 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:54:55,436 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:54:55,751 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:54:55,751 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:54:55,751 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:54:55,751 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:54:55,884 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:54:55,884 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:54:55,887 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:54:55,887 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:54:55,887 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de Microsoft de todo 2022
+2025-01-06 10:54:56,622 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 10:54:56,622 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'MSFT', 'start_date': '2022-01-01', 'end_date': '2022-12-31', 'timeframe': 'daily'}
+2025-01-06 10:54:56,622 - __main__ - INFO - Parsed query: {'ticker': 'MSFT', 'start_date': '2022-01-01', 'end_date': '2022-12-31', 'timeframe': 'daily'}
+2025-01-06 10:54:56,622 - src.agents.data_fetcher - INFO - Fetching data for ticker: MSFT, timeframe: daily, dates: 2022-01-01 to 2022-12-31
+2025-01-06 10:54:56,733 - src.agents.data_fetcher - INFO - Data not found in database. Fetching from API
+2025-01-06 10:54:57,736 - src.api.alpha_vantage - INFO - Fetched 6334 records from Alpha Vantage for ticker: MSFT
+2025-01-06 10:54:57,736 - src.agents.data_fetcher - INFO - Data fetched from API successfully
+2025-01-06 10:54:59,601 - src.database.operations - INFO - Saved 6334 new OHLC records for ticker: MSFT
+2025-01-06 10:54:59,602 - src.agents.data_fetcher - INFO - Fetched data saved to database
+2025-01-06 10:54:59,617 - src.agents.data_fetcher - INFO - Data extracted from database after API fetch
+2025-01-06 10:55:34,046 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:55:34,052 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:55:34,053 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:55:34,211 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:55:34,211 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:55:34,211 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:55:34,211 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:55:34,277 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:55:34,279 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:55:34,280 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:55:34,418 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:55:34,420 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:55:34,421 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:55:34,421 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:55:34,421 - src.agents.query_parser - INFO - Parsing query: Mostrar datos diarios de Microsoft de todo 2023
+2025-01-06 10:55:35,142 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 10:55:35,151 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'MSFT', 'start_date': '2023-01-01', 'end_date': '2023-12-31', 'timeframe': None}
+2025-01-06 10:55:35,151 - __main__ - INFO - Parsed query: {'ticker': 'MSFT', 'start_date': '2023-01-01', 'end_date': '2023-12-31', 'timeframe': None}
+2025-01-06 10:55:35,152 - src.agents.data_fetcher - INFO - Fetching data for ticker: MSFT, timeframe: None, dates: 2023-01-01 to 2023-12-31
+2025-01-06 10:55:35,237 - src.agents.data_fetcher - INFO - Data not found in database. Fetching from API
+2025-01-06 10:55:35,237 - src.agents.data_fetcher - ERROR - Error fetching data: 'NoneType' object has no attribute 'lower'
+2025-01-06 10:55:35,237 - __main__ - ERROR - Error processing query: 'NoneType' object has no attribute 'lower'
+2025-01-06 10:57:16,536 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:57:17,468 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:57:17,468 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:57:17,622 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:57:17,653 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:57:17,654 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:57:17,654 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:57:35,474 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:57:35,490 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:57:35,492 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:57:35,620 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:57:35,626 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:57:35,628 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:57:35,944 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:57:35,944 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:57:35,944 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:57:35,944 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:57:36,037 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:57:36,037 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:57:36,037 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:57:36,037 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:57:36,053 - src.agents.query_parser - INFO - Parsing query: Analiza Microsoft de todo 2023
+2025-01-06 10:57:37,002 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 10:57:37,018 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'MSFT', 'start_date': '2023-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 10:57:37,018 - __main__ - INFO - Parsed query: {'ticker': 'MSFT', 'start_date': '2023-01-01', 'end_date': '2023-12-31', 'timeframe': 'daily'}
+2025-01-06 10:57:37,019 - src.agents.data_fetcher - INFO - Fetching data for ticker: MSFT, timeframe: daily, dates: 2023-01-01 to 2023-12-31
+2025-01-06 10:57:37,123 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-06 10:58:50,590 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:58:50,602 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:58:50,602 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:58:50,758 - __main__ - INFO - Added C:\Users\jvazq\Data_Analysis_Tools\projects\yenka_ia1 to Python path
+2025-01-06 10:58:50,760 - __main__ - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:58:50,760 - src.agents.query_parser - INFO - Initializing QueryParser with OpenAI API
+2025-01-06 10:58:50,774 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:58:50,775 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:58:50,776 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:58:50,776 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:58:50,903 - __main__ - INFO - QueryParser initialized successfully
+2025-01-06 10:58:50,903 - src.database.operations - INFO - PostgreSQL database connection initialized
+2025-01-06 10:58:50,903 - __main__ - INFO - Database operations initialized successfully
+2025-01-06 10:58:50,903 - src.agents.data_fetcher - INFO - Initializing DataFetcher
+2025-01-06 10:58:50,903 - src.agents.query_parser - INFO - Parsing query: Analiza Microsoft de todo 2022
+2025-01-06 10:58:51,624 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-06 10:58:51,624 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'MSFT', 'start_date': '2022-01-01', 'end_date': '2022-12-31', 'timeframe': 'daily'}
+2025-01-06 10:58:51,624 - __main__ - INFO - Parsed query: {'ticker': 'MSFT', 'start_date': '2022-01-01', 'end_date': '2022-12-31', 'timeframe': 'daily'}
+2025-01-06 10:58:51,624 - src.agents.data_fetcher - INFO - Fetching data for ticker: MSFT, timeframe: daily, dates: 2022-01-01 to 2022-12-31
+2025-01-06 10:58:51,737 - src.agents.data_fetcher - INFO - Data retrieved from database

@@ -6,6 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from src.database.models import FundamentalData, OHLCData, BacktestSummary, BacktestDetails
 from config.settings import DATABASE_URL
 import logging
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 

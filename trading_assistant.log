@@ -1831,3 +1831,27 @@ DETAIL:  La fila que falla contiene (18, 15, 1, 2020-01-25, 00:00:00, 2020-03-08
 2025-01-07 10:24:55,308 - __main__ - INFO - Database operations initialized successfully
 2025-01-07 10:24:55,308 - src.agents.data_fetcher - INFO - Initializing DataFetcher
 2025-01-07 10:24:55,310 - src.agents.query_parser - INFO - Parsing query: Analiza SPY de 2020 a 2024
+2025-01-07 10:24:59,525 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-07 10:24:59,557 - src.agents.query_parser - INFO - Successfully parsed query: {'ticker': 'SPY', 'start_date': '2020-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-07 10:24:59,558 - __main__ - INFO - Parsed query: {'ticker': 'SPY', 'start_date': '2020-01-01', 'end_date': '2024-12-31', 'timeframe': 'daily'}
+2025-01-07 10:24:59,558 - src.agents.data_fetcher - INFO - Fetching data for ticker: SPY, timeframe: daily, dates: 2020-01-01 to 2024-12-31
+2025-01-07 10:24:59,696 - src.agents.data_fetcher - INFO - Data retrieved from database
+2025-01-07 10:25:01,721 - __main__ - INFO - Executing the Two-SMA backtest
+2025-01-07 10:25:01,722 - src.backtesting.two_sma - INFO - Starting two SMA backtest
+2025-01-07 10:25:01,730 - src.backtesting.two_sma - INFO - Data prepared for backtesting. Rows: 1258
+2025-01-07 10:25:01,739 - src.backtesting.two_sma - INFO - Initializing TwoSMA strategy with slow=20, fast=10
+2025-01-07 10:25:01,743 - src.backtesting.two_sma - INFO - Successfully initialized moving averages
+2025-01-07 10:25:01,871 - src.backtesting.two_sma - INFO - Backtest completed. Available stats: Index(['Start', 'End', 'Duration', 'Exposure Time [%]', 'Equity Final [$]',
+       'Equity Peak [$]', 'Return [%]', 'Buy & Hold Return [%]',
+       'Return (Ann.) [%]', 'Volatility (Ann.) [%]', 'Sharpe Ratio',
+       'Sortino Ratio', 'Calmar Ratio', 'Max. Drawdown [%]',
+       'Avg. Drawdown [%]', 'Max. Drawdown Duration', 'Avg. Drawdown Duration',
+       '# Trades', 'Win Rate [%]', 'Best Trade [%]', 'Worst Trade [%]',
+       'Avg. Trade [%]', 'Max. Trade Duration', 'Avg. Trade Duration',
+       'Profit Factor', 'Expectancy [%]', 'SQN', '_strategy', '_equity_curve',
+       '_trades'],
+      dtype='object')
+2025-01-07 10:25:01,913 - src.database.operations - INFO - Saved backtest summary for ticker: SPY
+2025-01-07 10:25:01,927 - src.backtesting.two_sma - INFO - Backtest summary saved with test_id=16
+2025-01-07 10:25:01,938 - src.database.operations - INFO - Saved 4 backtest detail records for test_id 16
+2025-01-07 10:25:01,939 - src.backtesting.two_sma - INFO - Backtest details saved for 4 trades

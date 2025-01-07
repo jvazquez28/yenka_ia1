@@ -58,6 +58,7 @@ def run_two_sma_backtest(data: pd.DataFrame, db_ops: DatabaseOperations, ticker:
         
         bt = Backtest(bt_data, TwoSMA, cash=10000, commission=0.001)
         result = bt.run()
+        #bt.plot()
         
         logger.info(f"Backtest completed. Available stats: {result.keys()}")
         
@@ -117,13 +118,13 @@ def run_two_sma_backtest(data: pd.DataFrame, db_ops: DatabaseOperations, ticker:
                 'sell_time': trade['ExitTime'].time(),
                 'buy_price': float(trade['EntryPrice']),
                 'sell_price': float(trade['ExitPrice']),
-                'position_size': int(np.round(trade['Size'])),
+                'position_size': int(np.abs(np.round(trade['Size']))),  # Using absolute value
                 'equity_after_trade': None
             })
         db_ops.save_backtest_details(test_id, detail_records)
         logger.info(f"Backtest details saved for {len(detail_records)} trades")
 
-        return result #, buy_hold_return_pct
+        return result
     
     except Exception as e:
         logger.error(f"Error during two_SMA_backtest: {str(e)}")

@@ -142,6 +142,9 @@ def main():
                     st.write("### Resultados del Backtest")
                     st.write(result)
 
+                    #st.write("### Gráficos del Backtest")
+                    #st.write(bt.plot(),unsafe_allow_html=True)
+
                     # Display backtest plots
                     #st.write("### Gráficos del Backtest")
                     #try:
